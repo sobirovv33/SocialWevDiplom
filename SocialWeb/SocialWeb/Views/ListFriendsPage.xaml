@@ -12,13 +12,23 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <TextBlock Text="Список друзей" HorizontalAlignment="Center" FontSize="20"
+        <TextBlock Text="Список друзей" HorizontalAlignment="Center" FontSize="30"
                    Foreground="White" FontWeight="Bold"/>
 
-        <ui:ListView x:Name="FriendsListView" Grid.Row="1" Margin="20" Background="#444444" 
+        <Grid Grid.Row="1" Width="400" HorizontalAlignment="Left" Margin="20 10 0 0">
+            <ui:TextBox x:Name="TBSearch" VerticalAlignment="Center" Padding="30,0,5,0" 
+                PlaceholderText="Поиск друзей..." Background="#333333" 
+                Foreground="White" BorderBrush="#555555" Margin="5"/>
+
+            <Image Source="/icoms/search.png" Width="16" Height="16" Margin="8,0,0,0"
+           VerticalAlignment="Center" HorizontalAlignment="Left" />
+        </Grid>
+
+        <ui:ListView x:Name="FriendsListView" Grid.Row="2" Margin="20" Background="#444444" 
                      BorderThickness="0" Foreground="White" d:ItemsSource="{d:SampleData ItemCount=25}"
                      >
             <ui:ListView.ItemTemplate>
@@ -32,13 +42,19 @@
                             </Grid.ColumnDefinitions>
                             <WrapPanel>
                                 
-                            <Image Source="{Binding ProfileImage}" Style="{StaticResource ProfileImageStyle}"/>
+                            <Image Source="{Binding ImageUser}" Style="{StaticResource ProfileImageStyle}"/>
 
-                            <TextBlock Text="{Binding UserName}" FontSize="16" VerticalAlignment="Center"
+                            <TextBlock Text="{Binding Surname, StringFormat={}{0}}" FontSize="16" VerticalAlignment="Center"
                                        FontWeight="Bold" Foreground="White" Grid.Column="1"/>
-
-                            
+                            <TextBlock Text="{Binding Name, StringFormat={}  {0}}" FontSize="16" VerticalAlignment="Center"
+                                       FontWeight="Bold" Foreground="White" Grid.Column="1"/>
                             </WrapPanel>
+                            <ui:Button HorizontalAlignment="Right" Margin="750 0 0 0" Background="Transparent"
+                                       BorderBrush="White">
+                                <WrapPanel Margin="0 0 0 0">
+                                    <Image Source="/icoms/message.png" Width="30" Height="30"/>
+                                </WrapPanel>
+                            </ui:Button>
                         </Grid>
                     </Border>
                 </DataTemplate>

@@ -46,7 +46,7 @@ namespace SocialWeb.Views
 
         private void BTListFriends_Click(object sender, RoutedEventArgs e)
         {
-
+            EnterFrame.Navigate(new ListFriendsPage());
         }
     }
 }

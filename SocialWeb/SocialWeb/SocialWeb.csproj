@@ -208,6 +208,7 @@
     <Resource Include="Icoms\add.png" />
     <Resource Include="Icoms\edit.png" />
     <Resource Include="Icoms\friends.png" />
+    <Resource Include="Icoms\search.png" />
     <Content Include="Models\DatabaseSocialWeb.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>DatabaseSocialWeb.Context.cs</LastGenOutput>
