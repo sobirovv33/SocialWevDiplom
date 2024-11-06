@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Хранилище SocialWebModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Dialog">
+          <Key>
+            <PropertyRef Name="idDialog" />
+          </Key>
+          <Property Name="idDialog" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="IdType" Type="int" />
+        </EntityType>
+        <EntityType Name="DialogMessage">
+          <Key>
+            <PropertyRef Name="idMessage" />
+          </Key>
+          <Property Name="idMessage" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TextSender" Type="text" Nullable="false" />
+          <Property Name="DateOfSender" Type="datetime" Nullable="false" />
+          <Property Name="idDialog" Type="int" />
+          <Property Name="idUser" Type="int" />
+        </EntityType>
+        <EntityType Name="DialogType">
+          <Key>
+            <PropertyRef Name="idType" />
+          </Key>
+          <Property Name="idType" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TypeName" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="DialogUsers">
+          <Key>
+            <PropertyRef Name="idDialogUser" />
+          </Key>
+          <Property Name="idDialogUser" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="idUser" Type="int" />
+          <Property Name="idDialog" Type="int" />
+        </EntityType>
+        <EntityType Name="Posts">
+          <Key>
+            <PropertyRef Name="idPost" />
+          </Key>
+          <Property Name="idPost" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TextPost" Type="text" Nullable="false" />
+          <Property Name="ImagePost" Type="image" />
+          <Property Name="MusicPath" Type="nvarchar(max)" />
+          <Property Name="VideoPath" Type="nvarchar(max)" />
+          <Property Name="idUser" Type="int" />
+        </EntityType>
+        <EntityType Name="Roles">
+          <Key>
+            <PropertyRef Name="idRole" />
+          </Key>
+          <Property Name="idRole" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RoleName" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="idUser" />
+          </Key>
+          <Property Name="idUser" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Surname" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="50" />
+          <Property Name="DataBirthDay" Type="date" />
+          <Property Name="PhoneNumber" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="100" />
+          <Property Name="Password" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="RoleId" Type="int" />
+          <Property Name="ImageUser" Type="image" />
+        </EntityType>
+        <Association Name="FK__Dialog__IdType__412EB0B6">
+          <End Role="DialogType" Type="Self.DialogType" Multiplicity="0..1" />
+          <End Role="Dialog" Type="Self.Dialog" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DialogType">
+              <PropertyRef Name="idType" />
+            </Principal>
+            <Dependent Role="Dialog">
+              <PropertyRef Name="IdType" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__DialogMes__idDia__440B1D61">
+          <End Role="Dialog" Type="Self.Dialog" Multiplicity="0..1" />
+          <End Role="DialogMessage" Type="Self.DialogMessage" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Dialog">
+              <PropertyRef Name="idDialog" />
+            </Principal>
+            <Dependent Role="DialogMessage">
+              <PropertyRef Name="idDialog" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__DialogMes__idUse__44FF419A">
+          <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+          <End Role="DialogMessage" Type="Self.DialogMessage" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="idUser" />
+            </Principal>
+            <Dependent Role="DialogMessage">
+              <PropertyRef Name="idUser" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__DialogUse__idDia__48CFD27E">
+          <End Role="Dialog" Type="Self.Dialog" Multiplicity="0..1" />
+          <End Role="DialogUsers" Type="Self.DialogUsers" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Dialog">
+              <PropertyRef Name="idDialog" />
+            </Principal>
+            <Dependent Role="DialogUsers">
+              <PropertyRef Name="idDialog" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__DialogUse__idUse__47DBAE45">
+          <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+          <End Role="DialogUsers" Type="Self.DialogUsers" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="idUser" />
+            </Principal>
+            <Dependent Role="DialogUsers">
+              <PropertyRef Name="idUser" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Posts__idUser__3C69FB99">
+          <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+          <End Role="Posts" Type="Self.Posts" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="idUser" />
+            </Principal>
+            <Dependent Role="Posts">
+              <PropertyRef Name="idUser" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Users__RoleId__398D8EEE">
+          <End Role="Roles" Type="Self.Roles" Multiplicity="0..1" />
+          <End Role="Users" Type="Self.Users" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Roles">
+              <PropertyRef Name="idRole" />
+            </Principal>
+            <Dependent Role="Users">
+              <PropertyRef Name="RoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Хранилище SocialWebModelContainer">
+          <EntitySet Name="Dialog" EntityType="Self.Dialog" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DialogMessage" EntityType="Self.DialogMessage" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DialogType" EntityType="Self.DialogType" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DialogUsers" EntityType="Self.DialogUsers" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Posts" EntityType="Self.Posts" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Dialog__IdType__412EB0B6" Association="Self.FK__Dialog__IdType__412EB0B6">
+            <End Role="DialogType" EntitySet="DialogType" />
+            <End Role="Dialog" EntitySet="Dialog" />
+          </AssociationSet>
+          <AssociationSet Name="FK__DialogMes__idDia__440B1D61" Association="Self.FK__DialogMes__idDia__440B1D61">
+            <End Role="Dialog" EntitySet="Dialog" />
+            <End Role="DialogMessage" EntitySet="DialogMessage" />
+          </AssociationSet>
+          <AssociationSet Name="FK__DialogMes__idUse__44FF419A" Association="Self.FK__DialogMes__idUse__44FF419A">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="DialogMessage" EntitySet="DialogMessage" />
+          </AssociationSet>
+          <AssociationSet Name="FK__DialogUse__idDia__48CFD27E" Association="Self.FK__DialogUse__idDia__48CFD27E">
+            <End Role="Dialog" EntitySet="Dialog" />
+            <End Role="DialogUsers" EntitySet="DialogUsers" />
+          </AssociationSet>
+          <AssociationSet Name="FK__DialogUse__idUse__47DBAE45" Association="Self.FK__DialogUse__idUse__47DBAE45">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="DialogUsers" EntitySet="DialogUsers" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Posts__idUser__3C69FB99" Association="Self.FK__Posts__idUser__3C69FB99">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Posts" EntitySet="Posts" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Users__RoleId__398D8EEE" Association="Self.FK__Users__RoleId__398D8EEE">
+            <End Role="Roles" EntitySet="Roles" />
+            <End Role="Users" EntitySet="Users" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SocialWebModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="SocialWebEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Dialog" EntityType="SocialWebModel.Dialog" />
+          <EntitySet Name="DialogMessage" EntityType="SocialWebModel.DialogMessage" />
+          <EntitySet Name="DialogType" EntityType="SocialWebModel.DialogType" />
+          <EntitySet Name="DialogUsers" EntityType="SocialWebModel.DialogUsers" />
+          <EntitySet Name="Posts" EntityType="SocialWebModel.Posts" />
+          <EntitySet Name="Roles" EntityType="SocialWebModel.Roles" />
+          <EntitySet Name="Users" EntityType="SocialWebModel.Users" />
+          <AssociationSet Name="FK__Dialog__IdType__412EB0B6" Association="SocialWebModel.FK__Dialog__IdType__412EB0B6">
+            <End Role="DialogType" EntitySet="DialogType" />
+            <End Role="Dialog" EntitySet="Dialog" />
+          </AssociationSet>
+          <AssociationSet Name="FK__DialogMes__idDia__440B1D61" Association="SocialWebModel.FK__DialogMes__idDia__440B1D61">
+            <End Role="Dialog" EntitySet="Dialog" />
+            <End Role="DialogMessage" EntitySet="DialogMessage" />
+          </AssociationSet>
+          <AssociationSet Name="FK__DialogUse__idDia__48CFD27E" Association="SocialWebModel.FK__DialogUse__idDia__48CFD27E">
+            <End Role="Dialog" EntitySet="Dialog" />
+            <End Role="DialogUsers" EntitySet="DialogUsers" />
+          </AssociationSet>
+          <AssociationSet Name="FK__DialogMes__idUse__44FF419A" Association="SocialWebModel.FK__DialogMes__idUse__44FF419A">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="DialogMessage" EntitySet="DialogMessage" />
+          </AssociationSet>
+          <AssociationSet Name="FK__DialogUse__idUse__47DBAE45" Association="SocialWebModel.FK__DialogUse__idUse__47DBAE45">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="DialogUsers" EntitySet="DialogUsers" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Posts__idUser__3C69FB99" Association="SocialWebModel.FK__Posts__idUser__3C69FB99">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Posts" EntitySet="Posts" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Users__RoleId__398D8EEE" Association="SocialWebModel.FK__Users__RoleId__398D8EEE">
+            <End Role="Roles" EntitySet="Roles" />
+            <End Role="Users" EntitySet="Users" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Dialog">
+          <Key>
+            <PropertyRef Name="idDialog" />
+          </Key>
+          <Property Name="idDialog" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IdType" Type="Int32" />
+          <NavigationProperty Name="DialogType" Relationship="SocialWebModel.FK__Dialog__IdType__412EB0B6" FromRole="Dialog" ToRole="DialogType" />
+          <NavigationProperty Name="DialogMessage" Relationship="SocialWebModel.FK__DialogMes__idDia__440B1D61" FromRole="Dialog" ToRole="DialogMessage" />
+          <NavigationProperty Name="DialogUsers" Relationship="SocialWebModel.FK__DialogUse__idDia__48CFD27E" FromRole="Dialog" ToRole="DialogUsers" />
+        </EntityType>
+        <EntityType Name="DialogMessage">
+          <Key>
+            <PropertyRef Name="idMessage" />
+          </Key>
+          <Property Name="idMessage" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TextSender" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="DateOfSender" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="idDialog" Type="Int32" />
+          <Property Name="idUser" Type="Int32" />
+          <NavigationProperty Name="Dialog" Relationship="SocialWebModel.FK__DialogMes__idDia__440B1D61" FromRole="DialogMessage" ToRole="Dialog" />
+          <NavigationProperty Name="Users" Relationship="SocialWebModel.FK__DialogMes__idUse__44FF419A" FromRole="DialogMessage" ToRole="Users" />
+        </EntityType>
+        <EntityType Name="DialogType">
+          <Key>
+            <PropertyRef Name="idType" />
+          </Key>
+          <Property Name="idType" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TypeName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Dialog" Relationship="SocialWebModel.FK__Dialog__IdType__412EB0B6" FromRole="DialogType" ToRole="Dialog" />
+        </EntityType>
+        <EntityType Name="DialogUsers">
+          <Key>
+            <PropertyRef Name="idDialogUser" />
+          </Key>
+          <Property Name="idDialogUser" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idUser" Type="Int32" />
+          <Property Name="idDialog" Type="Int32" />
+          <NavigationProperty Name="Dialog" Relationship="SocialWebModel.FK__DialogUse__idDia__48CFD27E" FromRole="DialogUsers" ToRole="Dialog" />
+          <NavigationProperty Name="Users" Relationship="SocialWebModel.FK__DialogUse__idUse__47DBAE45" FromRole="DialogUsers" ToRole="Users" />
+        </EntityType>
+        <EntityType Name="Posts">
+          <Key>
+            <PropertyRef Name="idPost" />
+          </Key>
+          <Property Name="idPost" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TextPost" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ImagePost" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="MusicPath" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="VideoPath" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="idUser" Type="Int32" />
+          <NavigationProperty Name="Users" Relationship="SocialWebModel.FK__Posts__idUser__3C69FB99" FromRole="Posts" ToRole="Users" />
+        </EntityType>
+        <EntityType Name="Roles">
+          <Key>
+            <PropertyRef Name="idRole" />
+          </Key>
+          <Property Name="idRole" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RoleName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Users" Relationship="SocialWebModel.FK__Users__RoleId__398D8EEE" FromRole="Roles" ToRole="Users" />
+        </EntityType>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="idUser" />
+          </Key>
+          <Property Name="idUser" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Surname" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DataBirthDay" Type="DateTime" Precision="0" />
+          <Property Name="PhoneNumber" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Password" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="RoleId" Type="Int32" />
+          <Property Name="ImageUser" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <NavigationProperty Name="DialogMessage" Relationship="SocialWebModel.FK__DialogMes__idUse__44FF419A" FromRole="Users" ToRole="DialogMessage" />
+          <NavigationProperty Name="DialogUsers" Relationship="SocialWebModel.FK__DialogUse__idUse__47DBAE45" FromRole="Users" ToRole="DialogUsers" />
+          <NavigationProperty Name="Posts" Relationship="SocialWebModel.FK__Posts__idUser__3C69FB99" FromRole="Users" ToRole="Posts" />
+          <NavigationProperty Name="Roles" Relationship="SocialWebModel.FK__Users__RoleId__398D8EEE" FromRole="Users" ToRole="Roles" />
+        </EntityType>
+        <Association Name="FK__Dialog__IdType__412EB0B6">
+          <End Type="SocialWebModel.DialogType" Role="DialogType" Multiplicity="0..1" />
+          <End Type="SocialWebModel.Dialog" Role="Dialog" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DialogType">
+              <PropertyRef Name="idType" />
+            </Principal>
+            <Dependent Role="Dialog">
+              <PropertyRef Name="IdType" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__DialogMes__idDia__440B1D61">
+          <End Type="SocialWebModel.Dialog" Role="Dialog" Multiplicity="0..1" />
+          <End Type="SocialWebModel.DialogMessage" Role="DialogMessage" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Dialog">
+              <PropertyRef Name="idDialog" />
+            </Principal>
+            <Dependent Role="DialogMessage">
+              <PropertyRef Name="idDialog" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__DialogUse__idDia__48CFD27E">
+          <End Type="SocialWebModel.Dialog" Role="Dialog" Multiplicity="0..1" />
+          <End Type="SocialWebModel.DialogUsers" Role="DialogUsers" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Dialog">
+              <PropertyRef Name="idDialog" />
+            </Principal>
+            <Dependent Role="DialogUsers">
+              <PropertyRef Name="idDialog" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__DialogMes__idUse__44FF419A">
+          <End Type="SocialWebModel.Users" Role="Users" Multiplicity="0..1" />
+          <End Type="SocialWebModel.DialogMessage" Role="DialogMessage" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="idUser" />
+            </Principal>
+            <Dependent Role="DialogMessage">
+              <PropertyRef Name="idUser" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__DialogUse__idUse__47DBAE45">
+          <End Type="SocialWebModel.Users" Role="Users" Multiplicity="0..1" />
+          <End Type="SocialWebModel.DialogUsers" Role="DialogUsers" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="idUser" />
+            </Principal>
+            <Dependent Role="DialogUsers">
+              <PropertyRef Name="idUser" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Posts__idUser__3C69FB99">
+          <End Type="SocialWebModel.Users" Role="Users" Multiplicity="0..1" />
+          <End Type="SocialWebModel.Posts" Role="Posts" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="idUser" />
+            </Principal>
+            <Dependent Role="Posts">
+              <PropertyRef Name="idUser" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Users__RoleId__398D8EEE">
+          <End Type="SocialWebModel.Roles" Role="Roles" Multiplicity="0..1" />
+          <End Type="SocialWebModel.Users" Role="Users" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Roles">
+              <PropertyRef Name="idRole" />
+            </Principal>
+            <Dependent Role="Users">
+              <PropertyRef Name="RoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище SocialWebModelContainer" CdmEntityContainer="SocialWebEntities">
+          <EntitySetMapping Name="Dialog">
+            <EntityTypeMapping TypeName="SocialWebModel.Dialog">
+              <MappingFragment StoreEntitySet="Dialog">
+                <ScalarProperty Name="IdType" ColumnName="IdType" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="idDialog" ColumnName="idDialog" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DialogMessage">
+            <EntityTypeMapping TypeName="SocialWebModel.DialogMessage">
+              <MappingFragment StoreEntitySet="DialogMessage">
+                <ScalarProperty Name="idUser" ColumnName="idUser" />
+                <ScalarProperty Name="idDialog" ColumnName="idDialog" />
+                <ScalarProperty Name="DateOfSender" ColumnName="DateOfSender" />
+                <ScalarProperty Name="TextSender" ColumnName="TextSender" />
+                <ScalarProperty Name="idMessage" ColumnName="idMessage" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DialogType">
+            <EntityTypeMapping TypeName="SocialWebModel.DialogType">
+              <MappingFragment StoreEntitySet="DialogType">
+                <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+                <ScalarProperty Name="idType" ColumnName="idType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DialogUsers">
+            <EntityTypeMapping TypeName="SocialWebModel.DialogUsers">
+              <MappingFragment StoreEntitySet="DialogUsers">
+                <ScalarProperty Name="idDialog" ColumnName="idDialog" />
+                <ScalarProperty Name="idUser" ColumnName="idUser" />
+                <ScalarProperty Name="idDialogUser" ColumnName="idDialogUser" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Posts">
+            <EntityTypeMapping TypeName="SocialWebModel.Posts">
+              <MappingFragment StoreEntitySet="Posts">
+                <ScalarProperty Name="idUser" ColumnName="idUser" />
+                <ScalarProperty Name="VideoPath" ColumnName="VideoPath" />
+                <ScalarProperty Name="MusicPath" ColumnName="MusicPath" />
+                <ScalarProperty Name="ImagePost" ColumnName="ImagePost" />
+                <ScalarProperty Name="TextPost" ColumnName="TextPost" />
+                <ScalarProperty Name="idPost" ColumnName="idPost" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Roles">
+            <EntityTypeMapping TypeName="SocialWebModel.Roles">
+              <MappingFragment StoreEntitySet="Roles">
+                <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+                <ScalarProperty Name="idRole" ColumnName="idRole" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="SocialWebModel.Users">
+              <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="ImageUser" ColumnName="ImageUser" />
+                <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+                <ScalarProperty Name="DataBirthDay" ColumnName="DataBirthDay" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="Surname" ColumnName="Surname" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="idUser" ColumnName="idUser" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
