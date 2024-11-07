@@ -1,13 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="SocialWebModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
   <EntityContainer Name="SocialWebEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ApplicationStatus" EntityType="SocialWebModel.ApplicationStatus" />
     <EntitySet Name="Dialog" EntityType="SocialWebModel.Dialog" />
     <EntitySet Name="DialogMessage" EntityType="SocialWebModel.DialogMessage" />
     <EntitySet Name="DialogType" EntityType="SocialWebModel.DialogType" />
     <EntitySet Name="DialogUsers" EntityType="SocialWebModel.DialogUsers" />
+    <EntitySet Name="Friends" EntityType="SocialWebModel.Friends" />
     <EntitySet Name="Posts" EntityType="SocialWebModel.Posts" />
     <EntitySet Name="Roles" EntityType="SocialWebModel.Roles" />
     <EntitySet Name="Users" EntityType="SocialWebModel.Users" />
+    <AssociationSet Name="FK__Friends__idAppSt__60A75C0F" Association="SocialWebModel.FK__Friends__idAppSt__60A75C0F">
+      <End Role="ApplicationStatus" EntitySet="ApplicationStatus" />
+      <End Role="Friends" EntitySet="Friends" />
+    </AssociationSet>
     <AssociationSet Name="FK__Dialog__IdType__412EB0B6" Association="SocialWebModel.FK__Dialog__IdType__412EB0B6">
       <End Role="DialogType" EntitySet="DialogType" />
       <End Role="Dialog" EntitySet="Dialog" />
@@ -28,6 +34,14 @@
       <End Role="Users" EntitySet="Users" />
       <End Role="DialogUsers" EntitySet="DialogUsers" />
     </AssociationSet>
+    <AssociationSet Name="FK__Friends__idFried__5FB337D6" Association="SocialWebModel.FK__Friends__idFried__5FB337D6">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Friends" EntitySet="Friends" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Friends__idUser__5EBF139D" Association="SocialWebModel.FK__Friends__idUser__5EBF139D">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Friends" EntitySet="Friends" />
+    </AssociationSet>
     <AssociationSet Name="FK__Posts__idUser__3C69FB99" Association="SocialWebModel.FK__Posts__idUser__3C69FB99">
       <End Role="Users" EntitySet="Users" />
       <End Role="Posts" EntitySet="Posts" />
@@ -37,6 +51,14 @@
       <End Role="Users" EntitySet="Users" />
     </AssociationSet>
   </EntityContainer>
+  <EntityType Name="ApplicationStatus">
+    <Key>
+      <PropertyRef Name="idStatus" />
+    </Key>
+    <Property Name="idStatus" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Friends" Relationship="SocialWebModel.FK__Friends__idAppSt__60A75C0F" FromRole="ApplicationStatus" ToRole="Friends" />
+  </EntityType>
   <EntityType Name="Dialog">
     <Key>
       <PropertyRef Name="idDialog" />
@@ -78,6 +100,19 @@
     <NavigationProperty Name="Dialog" Relationship="SocialWebModel.FK__DialogUse__idDia__48CFD27E" FromRole="DialogUsers" ToRole="Dialog" />
     <NavigationProperty Name="Users" Relationship="SocialWebModel.FK__DialogUse__idUse__47DBAE45" FromRole="DialogUsers" ToRole="Users" />
   </EntityType>
+  <EntityType Name="Friends">
+    <Key>
+      <PropertyRef Name="idFriendship" />
+    </Key>
+    <Property Name="idFriendship" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idUser" Type="Int32" />
+    <Property Name="idFried" Type="Int32" />
+    <Property Name="idAppStatus" Type="Int32" />
+    <Property Name="RequestDate" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="ApplicationStatus" Relationship="SocialWebModel.FK__Friends__idAppSt__60A75C0F" FromRole="Friends" ToRole="ApplicationStatus" />
+    <NavigationProperty Name="Users" Relationship="SocialWebModel.FK__Friends__idFried__5FB337D6" FromRole="Friends" ToRole="Users" />
+    <NavigationProperty Name="Users1" Relationship="SocialWebModel.FK__Friends__idUser__5EBF139D" FromRole="Friends" ToRole="Users" />
+  </EntityType>
   <EntityType Name="Posts">
     <Key>
       <PropertyRef Name="idPost" />
@@ -114,9 +149,23 @@
     <Property Name="ImageUser" Type="Binary" MaxLength="Max" FixedLength="false" />
     <NavigationProperty Name="DialogMessage" Relationship="SocialWebModel.FK__DialogMes__idUse__44FF419A" FromRole="Users" ToRole="DialogMessage" />
     <NavigationProperty Name="DialogUsers" Relationship="SocialWebModel.FK__DialogUse__idUse__47DBAE45" FromRole="Users" ToRole="DialogUsers" />
+    <NavigationProperty Name="Friends" Relationship="SocialWebModel.FK__Friends__idFried__5FB337D6" FromRole="Users" ToRole="Friends" />
+    <NavigationProperty Name="Friends1" Relationship="SocialWebModel.FK__Friends__idUser__5EBF139D" FromRole="Users" ToRole="Friends" />
     <NavigationProperty Name="Posts" Relationship="SocialWebModel.FK__Posts__idUser__3C69FB99" FromRole="Users" ToRole="Posts" />
     <NavigationProperty Name="Roles" Relationship="SocialWebModel.FK__Users__RoleId__398D8EEE" FromRole="Users" ToRole="Roles" />
   </EntityType>
+  <Association Name="FK__Friends__idAppSt__60A75C0F">
+    <End Type="SocialWebModel.ApplicationStatus" Role="ApplicationStatus" Multiplicity="0..1" />
+    <End Type="SocialWebModel.Friends" Role="Friends" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ApplicationStatus">
+        <PropertyRef Name="idStatus" />
+      </Principal>
+      <Dependent Role="Friends">
+        <PropertyRef Name="idAppStatus" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK__Dialog__IdType__412EB0B6">
     <End Type="SocialWebModel.DialogType" Role="DialogType" Multiplicity="0..1" />
     <End Type="SocialWebModel.Dialog" Role="Dialog" Multiplicity="*" />
@@ -173,6 +222,30 @@
         <PropertyRef Name="idUser" />
       </Principal>
       <Dependent Role="DialogUsers">
+        <PropertyRef Name="idUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Friends__idFried__5FB337D6">
+    <End Type="SocialWebModel.Users" Role="Users" Multiplicity="0..1" />
+    <End Type="SocialWebModel.Friends" Role="Friends" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="idUser" />
+      </Principal>
+      <Dependent Role="Friends">
+        <PropertyRef Name="idFried" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Friends__idUser__5EBF139D">
+    <End Type="SocialWebModel.Users" Role="Users" Multiplicity="0..1" />
+    <End Type="SocialWebModel.Friends" Role="Friends" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="idUser" />
+      </Principal>
+      <Dependent Role="Friends">
         <PropertyRef Name="idUser" />
       </Dependent>
     </ReferentialConstraint>

@@ -19,6 +19,8 @@ namespace SocialWeb.Models
         {
             this.DialogMessage = new HashSet<DialogMessage>();
             this.DialogUsers = new HashSet<DialogUsers>();
+            this.Friends = new HashSet<Friends>();
+            this.Friends1 = new HashSet<Friends>();
             this.Posts = new HashSet<Posts>();
         }
     
@@ -37,6 +39,10 @@ namespace SocialWeb.Models
         public virtual ICollection<DialogMessage> DialogMessage { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DialogUsers> DialogUsers { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Friends> Friends { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Friends> Friends1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Posts> Posts { get; set; }
         public virtual Roles Roles { get; set; }

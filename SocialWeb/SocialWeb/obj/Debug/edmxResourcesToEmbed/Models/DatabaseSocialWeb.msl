@@ -1,6 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="Хранилище SocialWebModelContainer" CdmEntityContainer="SocialWebEntities">
+    <EntitySetMapping Name="ApplicationStatus">
+      <EntityTypeMapping TypeName="SocialWebModel.ApplicationStatus">
+        <MappingFragment StoreEntitySet="ApplicationStatus">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="idStatus" ColumnName="idStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="Dialog">
       <EntityTypeMapping TypeName="SocialWebModel.Dialog">
         <MappingFragment StoreEntitySet="Dialog">
@@ -35,6 +43,17 @@
           <ScalarProperty Name="idDialog" ColumnName="idDialog" />
           <ScalarProperty Name="idUser" ColumnName="idUser" />
           <ScalarProperty Name="idDialogUser" ColumnName="idDialogUser" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Friends">
+      <EntityTypeMapping TypeName="SocialWebModel.Friends">
+        <MappingFragment StoreEntitySet="Friends">
+          <ScalarProperty Name="RequestDate" ColumnName="RequestDate" />
+          <ScalarProperty Name="idAppStatus" ColumnName="idAppStatus" />
+          <ScalarProperty Name="idFried" ColumnName="idFried" />
+          <ScalarProperty Name="idUser" ColumnName="idUser" />
+          <ScalarProperty Name="idFriendship" ColumnName="idFriendship" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

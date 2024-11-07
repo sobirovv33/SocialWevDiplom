@@ -1,5 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="Хранилище SocialWebModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ApplicationStatus">
+    <Key>
+      <PropertyRef Name="idStatus" />
+    </Key>
+    <Property Name="idStatus" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
   <EntityType Name="Dialog">
     <Key>
       <PropertyRef Name="idDialog" />
@@ -32,6 +39,16 @@
     <Property Name="idDialogUser" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="idUser" Type="int" />
     <Property Name="idDialog" Type="int" />
+  </EntityType>
+  <EntityType Name="Friends">
+    <Key>
+      <PropertyRef Name="idFriendship" />
+    </Key>
+    <Property Name="idFriendship" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idUser" Type="int" />
+    <Property Name="idFried" Type="int" />
+    <Property Name="idAppStatus" Type="int" />
+    <Property Name="RequestDate" Type="date" />
   </EntityType>
   <EntityType Name="Posts">
     <Key>
@@ -126,6 +143,42 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK__Friends__idAppSt__60A75C0F">
+    <End Role="ApplicationStatus" Type="Self.ApplicationStatus" Multiplicity="0..1" />
+    <End Role="Friends" Type="Self.Friends" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ApplicationStatus">
+        <PropertyRef Name="idStatus" />
+      </Principal>
+      <Dependent Role="Friends">
+        <PropertyRef Name="idAppStatus" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Friends__idFried__5FB337D6">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="Friends" Type="Self.Friends" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="idUser" />
+      </Principal>
+      <Dependent Role="Friends">
+        <PropertyRef Name="idFried" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Friends__idUser__5EBF139D">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="Friends" Type="Self.Friends" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="idUser" />
+      </Principal>
+      <Dependent Role="Friends">
+        <PropertyRef Name="idUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK__Posts__idUser__3C69FB99">
     <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
     <End Role="Posts" Type="Self.Posts" Multiplicity="*" />
@@ -151,10 +204,12 @@
     </ReferentialConstraint>
   </Association>
   <EntityContainer Name="Хранилище SocialWebModelContainer">
+    <EntitySet Name="ApplicationStatus" EntityType="Self.ApplicationStatus" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Dialog" EntityType="Self.Dialog" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="DialogMessage" EntityType="Self.DialogMessage" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="DialogType" EntityType="Self.DialogType" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="DialogUsers" EntityType="Self.DialogUsers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Friends" EntityType="Self.Friends" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Posts" EntityType="Self.Posts" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
@@ -177,6 +232,18 @@
     <AssociationSet Name="FK__DialogUse__idUse__47DBAE45" Association="Self.FK__DialogUse__idUse__47DBAE45">
       <End Role="Users" EntitySet="Users" />
       <End Role="DialogUsers" EntitySet="DialogUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Friends__idAppSt__60A75C0F" Association="Self.FK__Friends__idAppSt__60A75C0F">
+      <End Role="ApplicationStatus" EntitySet="ApplicationStatus" />
+      <End Role="Friends" EntitySet="Friends" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Friends__idFried__5FB337D6" Association="Self.FK__Friends__idFried__5FB337D6">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Friends" EntitySet="Friends" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Friends__idUser__5EBF139D" Association="Self.FK__Friends__idUser__5EBF139D">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Friends" EntitySet="Friends" />
     </AssociationSet>
     <AssociationSet Name="FK__Posts__idUser__3C69FB99" Association="Self.FK__Posts__idUser__3C69FB99">
       <End Role="Users" EntitySet="Users" />

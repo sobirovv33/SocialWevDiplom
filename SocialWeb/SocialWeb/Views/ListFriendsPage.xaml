@@ -18,17 +18,23 @@
 
         <TextBlock Text="Список друзей" HorizontalAlignment="Center" FontSize="30"
                    Foreground="White" FontWeight="Bold"/>
+        <Grid Grid.Row="1" HorizontalAlignment="Right" Width="250">
+            <ComboBox Grid.Row="1" HorizontalAlignment="Right" Width="200" x:Name="CBStatusFriend"/>
+        </Grid>
 
         <Grid Grid.Row="1" Width="400" HorizontalAlignment="Left" Margin="20 10 0 0">
             <ui:TextBox x:Name="TBSearch" VerticalAlignment="Center" Padding="30,0,5,0" 
-                PlaceholderText="Поиск друзей..." Background="#333333" 
-                Foreground="White" BorderBrush="#555555" Margin="5"/>
+                        PlaceholderText="Поиск друзей..." Background="#333333" 
+                        Foreground="White" BorderBrush="#555555" Margin="5"
+                        TextChanged="TBSearch_TextChanged"/>
 
             <Image Source="/icoms/search.png" Width="16" Height="16" Margin="8,0,0,0"
            VerticalAlignment="Center" HorizontalAlignment="Left" />
         </Grid>
-
-        <ui:ListView x:Name="FriendsListView" Grid.Row="2" Margin="20" Background="#444444" 
+        <TextBlock x:Name="TbFriendText" Text="У вас пока нет друзей" FontSize="30"
+                   Foreground="Gray" FontWeight="Bold" HorizontalAlignment="Center"
+                   VerticalAlignment="Center" Grid.Row="2" Visibility="Collapsed"/>
+        <ui:ListView x:Name="LVFriends" Grid.Row="2" Margin="20" Background="#444444" 
                      BorderThickness="0" Foreground="White" d:ItemsSource="{d:SampleData ItemCount=25}"
                      >
             <ui:ListView.ItemTemplate>
@@ -54,6 +60,21 @@
                                 <WrapPanel Margin="0 0 0 0">
                                     <Image Source="/icoms/message.png" Width="30" Height="30"/>
                                 </WrapPanel>
+                            </ui:Button>
+                            <ui:Button HorizontalAlignment="Right" Background="Transparent" BorderBrush="Transparent"
+                                       x:Name="BTAddFriend">
+                                <ui:Image Source="/icoms/addfriend.png" Width="30" Height="30"
+                                          Margin="0 0 70 0"/>
+                                <ui:Button.Style>
+                                    <Style TargetType="ui:Button">
+                                        <Setter Property="Visibility" Value="Collapsed"/>
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding isFriend}" Value="False">
+                                                <Setter Property="Visibility" Value="Visible"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </ui:Button.Style>
                             </ui:Button>
                         </Grid>
                     </Border>

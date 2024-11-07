@@ -67,6 +67,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Models\ApplicationStatus.cs">
+      <DependentUpon>DatabaseSocialWeb.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\DatabaseSocialWeb.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -92,6 +95,9 @@
       <DependentUpon>DatabaseSocialWeb.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\DialogUsers.cs">
+      <DependentUpon>DatabaseSocialWeb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Friends.cs">
       <DependentUpon>DatabaseSocialWeb.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Posts.cs">
@@ -209,6 +215,7 @@
     <Resource Include="Icoms\edit.png" />
     <Resource Include="Icoms\friends.png" />
     <Resource Include="Icoms\search.png" />
+    <Resource Include="Icoms\addfriend.png" />
     <Content Include="Models\DatabaseSocialWeb.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>DatabaseSocialWeb.Context.cs</LastGenOutput>
