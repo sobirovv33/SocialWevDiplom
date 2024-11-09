@@ -5,15 +5,15 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="6aa2061e868e40308998f39dbbd95726" Name="Diagram1">
-        <EntityTypeShape EntityType="SocialWebModel.ApplicationStatus" Width="1.5" PointX="3" PointY="2.375" />
-        <EntityTypeShape EntityType="SocialWebModel.Dialog" Width="1.5" PointX="3" PointY="10.125" />
-        <EntityTypeShape EntityType="SocialWebModel.DialogMessage" Width="1.5" PointX="5.25" PointY="9" />
-        <EntityTypeShape EntityType="SocialWebModel.DialogType" Width="1.5" PointX="0.75" PointY="10.375" />
-        <EntityTypeShape EntityType="SocialWebModel.DialogUsers" Width="1.5" PointX="5.25" PointY="6.125" />
-        <EntityTypeShape EntityType="SocialWebModel.Friends" Width="1.5" PointX="5.25" PointY="2.875" />
-        <EntityTypeShape EntityType="SocialWebModel.Posts" Width="1.5" PointX="5.25" PointY="15.125" />
-        <EntityTypeShape EntityType="SocialWebModel.Roles" Width="1.5" PointX="0.75" PointY="6.375" />
-        <EntityTypeShape EntityType="SocialWebModel.Users" Width="1.5" PointX="3" PointY="5.125" />
+        <EntityTypeShape EntityType="SocialWebModel.ApplicationStatus" Width="1.5" PointX="6" PointY="9.5" />
+        <EntityTypeShape EntityType="SocialWebModel.Dialog" Width="1.5" PointX="3" PointY="2.125" />
+        <EntityTypeShape EntityType="SocialWebModel.DialogMessage" Width="1.5" PointX="5.25" PointY="3.125" />
+        <EntityTypeShape EntityType="SocialWebModel.DialogType" Width="1.5" PointX="0.75" PointY="2.5" />
+        <EntityTypeShape EntityType="SocialWebModel.DialogUsers" Width="1.5" PointX="5.25" PointY="6.25" />
+        <EntityTypeShape EntityType="SocialWebModel.Friends" Width="1.5" PointX="8.25" PointY="5.875" />
+        <EntityTypeShape EntityType="SocialWebModel.Posts" Width="1.5" PointX="5.25" PointY="12.375" />
+        <EntityTypeShape EntityType="SocialWebModel.Roles" Width="1.5" PointX="0.75" PointY="6.5" />
+        <EntityTypeShape EntityType="SocialWebModel.Users" Width="1.5" PointX="3" PointY="5.25" />
         <AssociationConnector Association="SocialWebModel.FK__Friends__idAppSt__60A75C0F" />
         <AssociationConnector Association="SocialWebModel.FK__Dialog__IdType__412EB0B6" />
         <AssociationConnector Association="SocialWebModel.FK__DialogMes__idDia__440B1D61" />

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище SocialWebModelContainer" CdmEntityContainer="SocialWebEntities">
+    <EntitySetMapping Name="ApplicationStatus">
+      <EntityTypeMapping TypeName="SocialWebModel.ApplicationStatus">
+        <MappingFragment StoreEntitySet="ApplicationStatus">
+          <ScalarProperty Name="idStatus" ColumnName="idStatus" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dialog">
+      <EntityTypeMapping TypeName="SocialWebModel.Dialog">
+        <MappingFragment StoreEntitySet="Dialog">
+          <ScalarProperty Name="idDialog" ColumnName="idDialog" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IdType" ColumnName="IdType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DialogMessage">
+      <EntityTypeMapping TypeName="SocialWebModel.DialogMessage">
+        <MappingFragment StoreEntitySet="DialogMessage">
+          <ScalarProperty Name="idMessage" ColumnName="idMessage" />
+          <ScalarProperty Name="TextSender" ColumnName="TextSender" />
+          <ScalarProperty Name="DateOfSender" ColumnName="DateOfSender" />
+          <ScalarProperty Name="idDialog" ColumnName="idDialog" />
+          <ScalarProperty Name="idUser" ColumnName="idUser" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DialogType">
+      <EntityTypeMapping TypeName="SocialWebModel.DialogType">
+        <MappingFragment StoreEntitySet="DialogType">
+          <ScalarProperty Name="idType" ColumnName="idType" />
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DialogUsers">
+      <EntityTypeMapping TypeName="SocialWebModel.DialogUsers">
+        <MappingFragment StoreEntitySet="DialogUsers">
+          <ScalarProperty Name="idDialogUser" ColumnName="idDialogUser" />
+          <ScalarProperty Name="idUser" ColumnName="idUser" />
+          <ScalarProperty Name="idDialog" ColumnName="idDialog" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Friends">
+      <EntityTypeMapping TypeName="SocialWebModel.Friends">
+        <MappingFragment StoreEntitySet="Friends">
+          <ScalarProperty Name="idFriendship" ColumnName="idFriendship" />
+          <ScalarProperty Name="idUser" ColumnName="idUser" />
+          <ScalarProperty Name="idFried" ColumnName="idFried" />
+          <ScalarProperty Name="idAppStatus" ColumnName="idAppStatus" />
+          <ScalarProperty Name="RequestDate" ColumnName="RequestDate" />
+          <ScalarProperty Name="isFriend" ColumnName="isFriend" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Posts">
+      <EntityTypeMapping TypeName="SocialWebModel.Posts">
+        <MappingFragment StoreEntitySet="Posts">
+          <ScalarProperty Name="idPost" ColumnName="idPost" />
+          <ScalarProperty Name="TextPost" ColumnName="TextPost" />
+          <ScalarProperty Name="ImagePost" ColumnName="ImagePost" />
+          <ScalarProperty Name="MusicPath" ColumnName="MusicPath" />
+          <ScalarProperty Name="VideoPath" ColumnName="VideoPath" />
+          <ScalarProperty Name="idUser" ColumnName="idUser" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="SocialWebModel.Roles">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="idRole" ColumnName="idRole" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="SocialWebModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="idUser" ColumnName="idUser" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="DataBirthDay" ColumnName="DataBirthDay" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="ImageUser" ColumnName="ImageUser" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

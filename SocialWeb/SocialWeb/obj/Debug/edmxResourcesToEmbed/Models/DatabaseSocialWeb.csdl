@@ -109,6 +109,7 @@
     <Property Name="idFried" Type="Int32" />
     <Property Name="idAppStatus" Type="Int32" />
     <Property Name="RequestDate" Type="DateTime" Precision="0" />
+    <Property Name="isFriend" Type="Boolean" Nullable="false" />
     <NavigationProperty Name="ApplicationStatus" Relationship="SocialWebModel.FK__Friends__idAppSt__60A75C0F" FromRole="Friends" ToRole="ApplicationStatus" />
     <NavigationProperty Name="Users" Relationship="SocialWebModel.FK__Friends__idFried__5FB337D6" FromRole="Friends" ToRole="Users" />
     <NavigationProperty Name="Users1" Relationship="SocialWebModel.FK__Friends__idUser__5EBF139D" FromRole="Friends" ToRole="Users" />

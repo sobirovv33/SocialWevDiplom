@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1cc9eb2bfa52461a94cb437190720394" Name="Diagram1" ZoomLevel="64">
+        <EntityTypeShape EntityType="SocialWebModel.ApplicationStatus" Width="1.5" PointX="6" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SocialWebModel.Dialog" Width="1.5" PointX="3" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SocialWebModel.DialogMessage" Width="1.5" PointX="5.25" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SocialWebModel.DialogType" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SocialWebModel.DialogUsers" Width="1.5" PointX="5.25" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SocialWebModel.Friends" Width="1.5" PointX="8.25" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SocialWebModel.Posts" Width="1.5" PointX="5.25" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SocialWebModel.Roles" Width="1.5" PointX="0.75" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SocialWebModel.Users" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <AssociationConnector Association="SocialWebModel.FK__Friends__idAppSt__60A75C0F" ManuallyRouted="false" />
+        <AssociationConnector Association="SocialWebModel.FK__Dialog__IdType__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="SocialWebModel.FK__DialogMes__idDia__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="SocialWebModel.FK__DialogUse__idDia__48CFD27E" ManuallyRouted="false" />
+        <AssociationConnector Association="SocialWebModel.FK__DialogMes__idUse__44FF419A" ManuallyRouted="false" />
+        <AssociationConnector Association="SocialWebModel.FK__DialogUse__idUse__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="SocialWebModel.FK__Friends__idFried__5FB337D6" ManuallyRouted="false" />
+        <AssociationConnector Association="SocialWebModel.FK__Friends__idUser__5EBF139D" ManuallyRouted="false" />
+        <AssociationConnector Association="SocialWebModel.FK__Posts__idUser__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="SocialWebModel.FK__Users__RoleId__398D8EEE" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -65,16 +65,6 @@
                                        x:Name="BTAddFriend">
                                 <ui:Image Source="/icoms/addfriend.png" Width="30" Height="30"
                                           Margin="0 0 70 0"/>
-                                <ui:Button.Style>
-                                    <Style TargetType="ui:Button">
-                                        <Setter Property="Visibility" Value="Collapsed"/>
-                                        <Style.Triggers>
-                                            <DataTrigger Binding="{Binding isFriend}" Value="False">
-                                                <Setter Property="Visibility" Value="Visible"/>
-                                            </DataTrigger>
-                                        </Style.Triggers>
-                                    </Style>
-                                </ui:Button.Style>
                             </ui:Button>
                         </Grid>
                     </Border>

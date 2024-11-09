@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SocialWebModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ApplicationStatus">
+    <Key>
+      <PropertyRef Name="idStatus" />
+    </Key>
+    <Property Name="idStatus" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Friends" Relationship="Self.FK__Friends__idAppSt__60A75C0F" FromRole="ApplicationStatus" ToRole="Friends" />
+  </EntityType>
+  <EntityType Name="Dialog">
+    <Key>
+      <PropertyRef Name="idDialog" />
+    </Key>
+    <Property Name="idDialog" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IdType" Type="Int32" />
+    <NavigationProperty Name="DialogType" Relationship="Self.FK__Dialog__IdType__412EB0B6" FromRole="Dialog" ToRole="DialogType" />
+    <NavigationProperty Name="DialogMessage" Relationship="Self.FK__DialogMes__idDia__440B1D61" FromRole="Dialog" ToRole="DialogMessage" />
+    <NavigationProperty Name="DialogUsers" Relationship="Self.FK__DialogUse__idDia__48CFD27E" FromRole="Dialog" ToRole="DialogUsers" />
+  </EntityType>
+  <EntityType Name="DialogMessage">
+    <Key>
+      <PropertyRef Name="idMessage" />
+    </Key>
+    <Property Name="idMessage" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TextSender" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DateOfSender" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="idDialog" Type="Int32" />
+    <Property Name="idUser" Type="Int32" />
+    <NavigationProperty Name="Dialog" Relationship="Self.FK__DialogMes__idDia__440B1D61" FromRole="DialogMessage" ToRole="Dialog" />
+    <NavigationProperty Name="Users" Relationship="Self.FK__DialogMes__idUse__44FF419A" FromRole="DialogMessage" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="DialogType">
+    <Key>
+      <PropertyRef Name="idType" />
+    </Key>
+    <Property Name="idType" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TypeName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Dialog" Relationship="Self.FK__Dialog__IdType__412EB0B6" FromRole="DialogType" ToRole="Dialog" />
+  </EntityType>
+  <EntityType Name="DialogUsers">
+    <Key>
+      <PropertyRef Name="idDialogUser" />
+    </Key>
+    <Property Name="idDialogUser" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idUser" Type="Int32" />
+    <Property Name="idDialog" Type="Int32" />
+    <NavigationProperty Name="Dialog" Relationship="Self.FK__DialogUse__idDia__48CFD27E" FromRole="DialogUsers" ToRole="Dialog" />
+    <NavigationProperty Name="Users" Relationship="Self.FK__DialogUse__idUse__47DBAE45" FromRole="DialogUsers" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Friends">
+    <Key>
+      <PropertyRef Name="idFriendship" />
+    </Key>
+    <Property Name="idFriendship" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idUser" Type="Int32" />
+    <Property Name="idFried" Type="Int32" />
+    <Property Name="idAppStatus" Type="Int32" />
+    <Property Name="RequestDate" Type="DateTime" Precision="0" />
+    <Property Name="isFriend" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="ApplicationStatus" Relationship="Self.FK__Friends__idAppSt__60A75C0F" FromRole="Friends" ToRole="ApplicationStatus" />
+    <NavigationProperty Name="Users" Relationship="Self.FK__Friends__idFried__5FB337D6" FromRole="Friends" ToRole="Users" />
+    <NavigationProperty Name="Users1" Relationship="Self.FK__Friends__idUser__5EBF139D" FromRole="Friends" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Posts">
+    <Key>
+      <PropertyRef Name="idPost" />
+    </Key>
+    <Property Name="idPost" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TextPost" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ImagePost" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="MusicPath" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="VideoPath" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="idUser" Type="Int32" />
+    <NavigationProperty Name="Users" Relationship="Self.FK__Posts__idUser__3C69FB99" FromRole="Posts" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="idRole" />
+    </Key>
+    <Property Name="idRole" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Users" Relationship="Self.FK__Users__RoleId__398D8EEE" FromRole="Roles" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="idUser" />
+    </Key>
+    <Property Name="idUser" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Surname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DataBirthDay" Type="DateTime" Precision="0" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RoleId" Type="Int32" />
+    <Property Name="ImageUser" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="DialogMessage" Relationship="Self.FK__DialogMes__idUse__44FF419A" FromRole="Users" ToRole="DialogMessage" />
+    <NavigationProperty Name="DialogUsers" Relationship="Self.FK__DialogUse__idUse__47DBAE45" FromRole="Users" ToRole="DialogUsers" />
+    <NavigationProperty Name="Friends" Relationship="Self.FK__Friends__idFried__5FB337D6" FromRole="Users" ToRole="Friends" />
+    <NavigationProperty Name="Friends1" Relationship="Self.FK__Friends__idUser__5EBF139D" FromRole="Users" ToRole="Friends" />
+    <NavigationProperty Name="Posts" Relationship="Self.FK__Posts__idUser__3C69FB99" FromRole="Users" ToRole="Posts" />
+    <NavigationProperty Name="Roles" Relationship="Self.FK__Users__RoleId__398D8EEE" FromRole="Users" ToRole="Roles" />
+  </EntityType>
+  <Association Name="FK__Friends__idAppSt__60A75C0F">
+    <End Role="ApplicationStatus" Type="Self.ApplicationStatus" Multiplicity="0..1" />
+    <End Role="Friends" Type="Self.Friends" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ApplicationStatus">
+        <PropertyRef Name="idStatus" />
+      </Principal>
+      <Dependent Role="Friends">
+        <PropertyRef Name="idAppStatus" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Dialog__IdType__412EB0B6">
+    <End Role="DialogType" Type="Self.DialogType" Multiplicity="0..1" />
+    <End Role="Dialog" Type="Self.Dialog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DialogType">
+        <PropertyRef Name="idType" />
+      </Principal>
+      <Dependent Role="Dialog">
+        <PropertyRef Name="IdType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DialogMes__idDia__440B1D61">
+    <End Role="Dialog" Type="Self.Dialog" Multiplicity="0..1" />
+    <End Role="DialogMessage" Type="Self.DialogMessage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dialog">
+        <PropertyRef Name="idDialog" />
+      </Principal>
+      <Dependent Role="DialogMessage">
+        <PropertyRef Name="idDialog" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DialogUse__idDia__48CFD27E">
+    <End Role="Dialog" Type="Self.Dialog" Multiplicity="0..1" />
+    <End Role="DialogUsers" Type="Self.DialogUsers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dialog">
+        <PropertyRef Name="idDialog" />
+      </Principal>
+      <Dependent Role="DialogUsers">
+        <PropertyRef Name="idDialog" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DialogMes__idUse__44FF419A">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="DialogMessage" Type="Self.DialogMessage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="idUser" />
+      </Principal>
+      <Dependent Role="DialogMessage">
+        <PropertyRef Name="idUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DialogUse__idUse__47DBAE45">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="DialogUsers" Type="Self.DialogUsers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="idUser" />
+      </Principal>
+      <Dependent Role="DialogUsers">
+        <PropertyRef Name="idUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Friends__idFried__5FB337D6">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="Friends" Type="Self.Friends" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="idUser" />
+      </Principal>
+      <Dependent Role="Friends">
+        <PropertyRef Name="idFried" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Friends__idUser__5EBF139D">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="Friends" Type="Self.Friends" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="idUser" />
+      </Principal>
+      <Dependent Role="Friends">
+        <PropertyRef Name="idUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Posts__idUser__3C69FB99">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="Posts" Type="Self.Posts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="idUser" />
+      </Principal>
+      <Dependent Role="Posts">
+        <PropertyRef Name="idUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Users__RoleId__398D8EEE">
+    <End Role="Roles" Type="Self.Roles" Multiplicity="0..1" />
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="idRole" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SocialWebEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ApplicationStatus" EntityType="Self.ApplicationStatus" />
+    <EntitySet Name="Dialog" EntityType="Self.Dialog" />
+    <EntitySet Name="DialogMessage" EntityType="Self.DialogMessage" />
+    <EntitySet Name="DialogType" EntityType="Self.DialogType" />
+    <EntitySet Name="DialogUsers" EntityType="Self.DialogUsers" />
+    <EntitySet Name="Friends" EntityType="Self.Friends" />
+    <EntitySet Name="Posts" EntityType="Self.Posts" />
+    <EntitySet Name="Roles" EntityType="Self.Roles" />
+    <EntitySet Name="Users" EntityType="Self.Users" />
+    <AssociationSet Name="FK__Friends__idAppSt__60A75C0F" Association="Self.FK__Friends__idAppSt__60A75C0F">
+      <End Role="ApplicationStatus" EntitySet="ApplicationStatus" />
+      <End Role="Friends" EntitySet="Friends" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Dialog__IdType__412EB0B6" Association="Self.FK__Dialog__IdType__412EB0B6">
+      <End Role="DialogType" EntitySet="DialogType" />
+      <End Role="Dialog" EntitySet="Dialog" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DialogMes__idDia__440B1D61" Association="Self.FK__DialogMes__idDia__440B1D61">
+      <End Role="Dialog" EntitySet="Dialog" />
+      <End Role="DialogMessage" EntitySet="DialogMessage" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DialogUse__idDia__48CFD27E" Association="Self.FK__DialogUse__idDia__48CFD27E">
+      <End Role="Dialog" EntitySet="Dialog" />
+      <End Role="DialogUsers" EntitySet="DialogUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DialogMes__idUse__44FF419A" Association="Self.FK__DialogMes__idUse__44FF419A">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="DialogMessage" EntitySet="DialogMessage" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DialogUse__idUse__47DBAE45" Association="Self.FK__DialogUse__idUse__47DBAE45">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="DialogUsers" EntitySet="DialogUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Friends__idFried__5FB337D6" Association="Self.FK__Friends__idFried__5FB337D6">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Friends" EntitySet="Friends" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Friends__idUser__5EBF139D" Association="Self.FK__Friends__idUser__5EBF139D">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Friends" EntitySet="Friends" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Posts__idUser__3C69FB99" Association="Self.FK__Posts__idUser__3C69FB99">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Posts" EntitySet="Posts" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Users__RoleId__398D8EEE" Association="Self.FK__Users__RoleId__398D8EEE">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

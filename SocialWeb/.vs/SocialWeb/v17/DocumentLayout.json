@@ -3,32 +3,76 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|c:\\users\\user\\desktop\\muhammad\\\u0434\u0438\u043F\u043B\u043E\u043C \u043C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\socialwevdiplom\\socialweb\\socialweb\\views\\listfriendspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|solutionrelative:socialweb\\views\\listfriendspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|c:\\users\\user\\desktop\\muhammad\\\u0434\u0438\u043F\u043B\u043E\u043C \u043C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\socialwevdiplom\\socialweb\\socialweb\\views\\listfriendspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|solutionrelative:socialweb\\views\\listfriendspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|c:\\users\\user\\desktop\\muhammad\\\u0434\u0438\u043F\u043B\u043E\u043C \u043C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\socialwevdiplom\\socialweb\\socialweb\\models\\friends.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|solutionrelative:socialweb\\models\\friends.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|c:\\users\\user\\desktop\\muhammad\\\u0434\u0438\u043F\u043B\u043E\u043C \u043C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\socialwevdiplom\\socialweb\\socialweb\\services\\netmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|solutionrelative:socialweb\\services\\netmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\socialweb\\views\\authorizationpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|solutionrelative:socialweb\\views\\authorizationpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\socialweb\\models\\databasesocialweb.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
-      "RelativeMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|solutionrelative:socialweb\\models\\databasesocialweb.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+      "AbsoluteMoniker": "D:0:0:{9075E392-B77B-4C96-B8FF-1196A81FB5B1}|SocialWebApi\\SocialWebApi.csproj|c:\\users\\user\\desktop\\muhammad\\\u0434\u0438\u043F\u043B\u043E\u043C \u043C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\socialwevdiplom\\socialweb\\socialwebapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9075E392-B77B-4C96-B8FF-1196A81FB5B1}|SocialWebApi\\SocialWebApi.csproj|solutionrelative:socialwebapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9075E392-B77B-4C96-B8FF-1196A81FB5B1}|SocialWebApi\\SocialWebApi.csproj|c:\\users\\user\\desktop\\muhammad\\\u0434\u0438\u043F\u043B\u043E\u043C \u043C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\socialwevdiplom\\socialweb\\socialwebapi\\models\\logindata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9075E392-B77B-4C96-B8FF-1196A81FB5B1}|SocialWebApi\\SocialWebApi.csproj|solutionrelative:socialwebapi\\models\\logindata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\socialweb\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|solutionrelative:socialweb\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\socialweb\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|solutionrelative:socialweb\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9075E392-B77B-4C96-B8FF-1196A81FB5B1}|SocialWebApi\\SocialWebApi.csproj|c:\\users\\user\\desktop\\muhammad\\\u0434\u0438\u043F\u043B\u043E\u043C \u043C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\socialwevdiplom\\socialweb\\socialwebapi\\models\\socialwebmodel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{9075E392-B77B-4C96-B8FF-1196A81FB5B1}|SocialWebApi\\SocialWebApi.csproj|solutionrelative:socialwebapi\\models\\socialwebmodel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\socialweb\\views\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|solutionrelative:socialweb\\views\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\socialweb\\views\\listfriendspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|solutionrelative:socialweb\\views\\listfriendspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\socialweb\\views\\authorizationpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|solutionrelative:socialweb\\views\\authorizationpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\socialweb\\views\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|solutionrelative:socialweb\\views\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\socialweb\\views\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|solutionrelative:socialweb\\views\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\socialweb\\views\\chatspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|solutionrelative:socialweb\\views\\chatspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\socialweb\\views\\listfriendspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|solutionrelative:socialweb\\views\\listfriendspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\socialweb\\models\\friends.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|solutionrelative:socialweb\\models\\friends.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\socialweb\\models\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|solutionrelative:socialweb\\models\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\socialweb\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|solutionrelative:socialweb\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\socialweb\\models\\databasesocialweb.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|solutionrelative:socialweb\\models\\databasesocialweb.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\socialweb\\models\\posts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|solutionrelative:socialweb\\models\\posts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\socialweb\\views\\profilepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -37,10 +81,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\socialweb\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|solutionrelative:socialweb\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\socialweb\\views\\authorizationpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|solutionrelative:socialweb\\views\\authorizationpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\socialweb\\views\\editprofilepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -69,14 +109,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\socialweb\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|solutionrelative:socialweb\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\socialweb\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|solutionrelative:socialweb\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\socialweb\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1572E9AF-3C41-4006-9F7E-2EDA025F91D9}|SocialWeb\\SocialWeb.csproj|solutionrelative:socialweb\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -86,116 +118,121 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Friends.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Models\\Friends.cs",
-              "RelativeDocumentMoniker": "SocialWeb\\Models\\Friends.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Models\\Friends.cs",
-              "RelativeToolTip": "SocialWeb\\Models\\Friends.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T06:36:45.427Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ListFriendsPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Views\\ListFriendsPage.xaml.cs",
-              "RelativeDocumentMoniker": "SocialWeb\\Views\\ListFriendsPage.xaml.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Views\\ListFriendsPage.xaml.cs",
-              "RelativeToolTip": "SocialWeb\\Views\\ListFriendsPage.xaml.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Title": "NetManager.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Services\\NetManager.cs",
+              "RelativeDocumentMoniker": "SocialWeb\\Services\\NetManager.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Services\\NetManager.cs",
+              "RelativeToolTip": "SocialWeb\\Services\\NetManager.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA2wBcAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T04:06:35.037Z",
+              "WhenOpened": "2024-11-09T20:28:37.603Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Views\\MainPage.xaml.cs",
-              "RelativeDocumentMoniker": "SocialWeb\\Views\\MainPage.xaml.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Views\\MainPage.xaml.cs",
-              "RelativeToolTip": "SocialWeb\\Views\\MainPage.xaml.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAwDAAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T06:38:54.478Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ListFriendsPage.xaml",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Views\\ListFriendsPage.xaml",
-              "RelativeDocumentMoniker": "SocialWeb\\Views\\ListFriendsPage.xaml",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Views\\ListFriendsPage.xaml",
-              "RelativeToolTip": "SocialWeb\\Views\\ListFriendsPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-06T17:20:08.858Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "RegistrationPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Views\\RegistrationPage.xaml.cs",
-              "RelativeDocumentMoniker": "SocialWeb\\Views\\RegistrationPage.xaml.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Views\\RegistrationPage.xaml.cs",
-              "RelativeToolTip": "SocialWeb\\Views\\RegistrationPage.xaml.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAYwGUAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T05:45:30.295Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DatabaseSocialWeb.edmx [Diagram1]",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Models\\DatabaseSocialWeb.edmx",
-              "RelativeDocumentMoniker": "SocialWeb\\Models\\DatabaseSocialWeb.edmx",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Models\\DatabaseSocialWeb.edmx [Diagram1]",
-              "RelativeToolTip": "SocialWeb\\Models\\DatabaseSocialWeb.edmx [Diagram1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2024-11-05T05:48:22.594Z",
-              "EditorCaption": " [Diagram1]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "LoginData.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWebApi\\Models\\LoginData.cs",
+              "RelativeDocumentMoniker": "SocialWebApi\\Models\\LoginData.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWebApi\\Models\\LoginData.cs",
+              "RelativeToolTip": "SocialWebApi\\Models\\LoginData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T20:20:55.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWebApi\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "SocialWebApi\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWebApi\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "SocialWebApi\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwDQAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T09:28:44.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "AuthorizationPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Views\\AuthorizationPage.xaml.cs",
               "RelativeDocumentMoniker": "SocialWeb\\Views\\AuthorizationPage.xaml.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Views\\AuthorizationPage.xaml.cs",
               "RelativeToolTip": "SocialWeb\\Views\\AuthorizationPage.xaml.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAqwD8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAuwBYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-03T18:21:48.027Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ProfilePage.xaml",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Views\\ProfilePage.xaml",
-              "RelativeDocumentMoniker": "SocialWeb\\Views\\ProfilePage.xaml",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Views\\ProfilePage.xaml",
-              "RelativeToolTip": "SocialWeb\\Views\\ProfilePage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-06T09:31:28.37Z"
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "SocialWeb\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\MainWindow.xaml.cs",
+              "RelativeToolTip": "SocialWeb\\MainWindow.xaml.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAWwB8AAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T04:01:49.795Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\App.xaml",
-              "RelativeDocumentMoniker": "SocialWeb\\App.xaml",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\App.xaml",
-              "RelativeToolTip": "SocialWeb\\App.xaml",
+              "DocumentIndex": 6,
+              "Title": "SocialWebModel.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWebApi\\Models\\SocialWebModel.edmx",
+              "RelativeDocumentMoniker": "SocialWebApi\\Models\\SocialWebModel.edmx",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWebApi\\Models\\SocialWebModel.edmx [Diagram1]",
+              "RelativeToolTip": "SocialWebApi\\Models\\SocialWebModel.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-11-09T09:25:28.832Z",
+              "EditorCaption": " [Diagram1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Views\\MainPage.xaml",
+              "RelativeDocumentMoniker": "SocialWeb\\Views\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Views\\MainPage.xaml",
+              "RelativeToolTip": "SocialWeb\\Views\\MainPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-03T04:06:09.918Z",
+              "WhenOpened": "2024-11-05T08:47:39.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\App.xaml.cs",
+              "RelativeDocumentMoniker": "SocialWeb\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\App.xaml.cs",
+              "RelativeToolTip": "SocialWeb\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T04:06:45.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Views\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "SocialWeb\\Views\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Views\\MainPage.xaml.cs",
+              "RelativeToolTip": "SocialWeb\\Views\\MainPage.xaml.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T06:38:54.478Z",
               "EditorCaption": ""
             },
             {
@@ -212,18 +249,146 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MainPage.xaml",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Views\\MainPage.xaml",
-              "RelativeDocumentMoniker": "SocialWeb\\Views\\MainPage.xaml",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Views\\MainPage.xaml",
-              "RelativeToolTip": "SocialWeb\\Views\\MainPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-05T08:47:39.204Z"
+              "DocumentIndex": 8,
+              "Title": "ListFriendsPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Views\\ListFriendsPage.xaml.cs",
+              "RelativeDocumentMoniker": "SocialWeb\\Views\\ListFriendsPage.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Views\\ListFriendsPage.xaml.cs",
+              "RelativeToolTip": "SocialWeb\\Views\\ListFriendsPage.xaml.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAYwEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T04:06:35.037Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "ChatsPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Views\\ChatsPage.xaml.cs",
+              "RelativeDocumentMoniker": "SocialWeb\\Views\\ChatsPage.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Views\\ChatsPage.xaml.cs",
+              "RelativeToolTip": "SocialWeb\\Views\\ChatsPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T06:41:11.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ListFriendsPage.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Views\\ListFriendsPage.xaml",
+              "RelativeDocumentMoniker": "SocialWeb\\Views\\ListFriendsPage.xaml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Views\\ListFriendsPage.xaml",
+              "RelativeToolTip": "SocialWeb\\Views\\ListFriendsPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-06T17:20:08.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Posts.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Models\\Posts.cs",
+              "RelativeDocumentMoniker": "SocialWeb\\Models\\Posts.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Models\\Posts.cs",
+              "RelativeToolTip": "SocialWeb\\Models\\Posts.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T10:12:03.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Friends.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Models\\Friends.cs",
+              "RelativeDocumentMoniker": "SocialWeb\\Models\\Friends.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Models\\Friends.cs",
+              "RelativeToolTip": "SocialWeb\\Models\\Friends.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAzwBgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T06:36:45.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Users.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Models\\Users.cs",
+              "RelativeDocumentMoniker": "SocialWeb\\Models\\Users.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Models\\Users.cs",
+              "RelativeToolTip": "SocialWeb\\Models\\Users.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T10:12:00.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Roles.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Models\\Roles.cs",
+              "RelativeDocumentMoniker": "SocialWeb\\Models\\Roles.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Models\\Roles.cs",
+              "RelativeToolTip": "SocialWeb\\Models\\Roles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T11:55:37.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DatabaseSocialWeb.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Models\\DatabaseSocialWeb.edmx",
+              "RelativeDocumentMoniker": "SocialWeb\\Models\\DatabaseSocialWeb.edmx",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Models\\DatabaseSocialWeb.edmx [Diagram1]",
+              "RelativeToolTip": "SocialWeb\\Models\\DatabaseSocialWeb.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-11-05T05:48:22.594Z",
+              "EditorCaption": " [Diagram1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ProfilePage.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Views\\ProfilePage.xaml",
+              "RelativeDocumentMoniker": "SocialWeb\\Views\\ProfilePage.xaml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Views\\ProfilePage.xaml",
+              "RelativeToolTip": "SocialWeb\\Views\\ProfilePage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-06T09:31:28.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\App.xaml",
+              "RelativeDocumentMoniker": "SocialWeb\\App.xaml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\App.xaml",
+              "RelativeToolTip": "SocialWeb\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-03T04:06:09.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "RegistrationPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Views\\RegistrationPage.xaml.cs",
+              "RelativeDocumentMoniker": "SocialWeb\\Views\\RegistrationPage.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Views\\RegistrationPage.xaml.cs",
+              "RelativeToolTip": "SocialWeb\\Views\\RegistrationPage.xaml.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAYwGUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T05:45:30.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "ProfilePage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Views\\ProfilePage.xaml.cs",
               "RelativeDocumentMoniker": "SocialWeb\\Views\\ProfilePage.xaml.cs",
@@ -231,45 +396,49 @@
               "RelativeToolTip": "SocialWeb\\Views\\ProfilePage.xaml.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAkwB4AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T10:48:10.263Z"
+              "WhenOpened": "2024-11-06T10:48:10.263Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 20,
               "Title": "EditProfilePage.xaml",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Views\\EditProfilePage.xaml",
               "RelativeDocumentMoniker": "SocialWeb\\Views\\EditProfilePage.xaml",
               "ToolTip": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Views\\EditProfilePage.xaml",
               "RelativeToolTip": "SocialWeb\\Views\\EditProfilePage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-06T13:40:36.197Z"
+              "WhenOpened": "2024-11-06T13:40:36.197Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Views\\EditProfilePage.xaml.cs",
+              "DocumentIndex": 22,
+              "Title": "EditProfilePage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Views\\EditProfilePage.xaml.cs",
               "RelativeDocumentMoniker": "SocialWeb\\Views\\EditProfilePage.xaml.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Views\\EditProfilePage.xaml.cs",
               "RelativeToolTip": "SocialWeb\\Views\\EditProfilePage.xaml.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAkwGwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T13:46:31.916Z"
+              "WhenOpened": "2024-11-06T13:46:31.916Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 24,
               "Title": "RegistrationPage.xaml",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Views\\RegistrationPage.xaml",
               "RelativeDocumentMoniker": "SocialWeb\\Views\\RegistrationPage.xaml",
               "ToolTip": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\Views\\RegistrationPage.xaml",
               "RelativeToolTip": "SocialWeb\\Views\\RegistrationPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-03T18:23:48.847Z"
+              "WhenOpened": "2024-11-03T18:23:48.847Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 25,
               "Title": "App.config",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\App.config",
               "RelativeDocumentMoniker": "SocialWeb\\App.config",
@@ -282,38 +451,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\App.xaml.cs",
-              "RelativeDocumentMoniker": "SocialWeb\\App.xaml.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\App.xaml.cs",
-              "RelativeToolTip": "SocialWeb\\App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T04:06:45.896Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 26,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\MainWindow.xaml",
               "RelativeDocumentMoniker": "SocialWeb\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\MainWindow.xaml",
               "RelativeToolTip": "SocialWeb\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-03T04:01:51.298Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "SocialWeb\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Muhammad\\\u0414\u0438\u043F\u043B\u043E\u043C \u041C\u0443\u0445\u0430\u043C\u043C\u0430\u0434\\SocialWevDiplom\\SocialWeb\\SocialWeb\\MainWindow.xaml.cs",
-              "RelativeToolTip": "SocialWeb\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAWwBoAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T04:01:49.795Z"
+              "WhenOpened": "2024-11-03T04:01:51.298Z",
+              "EditorCaption": ""
             }
           ]
         }

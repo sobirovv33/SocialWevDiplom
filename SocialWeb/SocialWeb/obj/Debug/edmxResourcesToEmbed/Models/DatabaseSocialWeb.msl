@@ -49,6 +49,7 @@
     <EntitySetMapping Name="Friends">
       <EntityTypeMapping TypeName="SocialWebModel.Friends">
         <MappingFragment StoreEntitySet="Friends">
+          <ScalarProperty Name="isFriend" ColumnName="isFriend" />
           <ScalarProperty Name="RequestDate" ColumnName="RequestDate" />
           <ScalarProperty Name="idAppStatus" ColumnName="idAppStatus" />
           <ScalarProperty Name="idFried" ColumnName="idFried" />

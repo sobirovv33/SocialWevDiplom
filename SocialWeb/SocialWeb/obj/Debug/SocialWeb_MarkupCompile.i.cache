@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\user\Desktop\Muhammad\Диплом Мухаммад\SocialWevDiplom\SocialWeb\SocialWeb\App.xaml
-7-1843653391
+9560307955
 2-1161737661
-24-1895371687
-19-1794430345
-MainWindow.xaml;Views\AuthorizationPage.xaml;Views\EditProfilePage.xaml;Views\ListFriendsPage.xaml;Views\MainPage.xaml;Views\ProfilePage.xaml;Views\RegistrationPage.xaml;
+271789504015
+20251930775
+CustomControls\StatusThumbsUserControl.xaml;MainWindow.xaml;Views\AuthorizationPage.xaml;Views\ChatsPage.xaml;Views\EditProfilePage.xaml;Views\ListFriendsPage.xaml;Views\MainPage.xaml;Views\ProfilePage.xaml;Views\RegistrationPage.xaml;
 
-True
+False
 

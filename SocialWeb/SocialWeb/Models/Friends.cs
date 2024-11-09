@@ -19,9 +19,8 @@ namespace SocialWeb.Models
         public Nullable<int> idFried { get; set; }
         public Nullable<int> idAppStatus { get; set; }
         public Nullable<System.DateTime> RequestDate { get; set; }
-        public bool IsFriend {  get; set; }
-
-
+        public bool isFriend { get; set; }
+    
         public virtual ApplicationStatus ApplicationStatus { get; set; }
         public virtual Users Users { get; set; }
         public virtual Users Users1 { get; set; }

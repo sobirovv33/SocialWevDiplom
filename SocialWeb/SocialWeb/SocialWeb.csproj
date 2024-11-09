@@ -41,6 +41,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
@@ -67,6 +70,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CustomControls\StatusThumbsUserControl.xaml.cs">
+      <DependentUpon>StatusThumbsUserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Models\ApplicationStatus.cs">
       <DependentUpon>DatabaseSocialWeb.tt</DependentUpon>
     </Compile>
@@ -109,8 +115,12 @@
     <Compile Include="Models\Users.cs">
       <DependentUpon>DatabaseSocialWeb.tt</DependentUpon>
     </Compile>
+    <Compile Include="Services\NetManager.cs" />
     <Compile Include="Views\AuthorizationPage.xaml.cs">
       <DependentUpon>AuthorizationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ChatsPage.xaml.cs">
+      <DependentUpon>ChatsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\EditProfilePage.xaml.cs">
       <DependentUpon>EditProfilePage.xaml</DependentUpon>
@@ -127,6 +137,10 @@
     <Compile Include="Views\RegistrationPage.xaml.cs">
       <DependentUpon>RegistrationPage.xaml</DependentUpon>
     </Compile>
+    <Page Include="CustomControls\StatusThumbsUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -140,6 +154,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Views\AuthorizationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ChatsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -216,6 +234,7 @@
     <Resource Include="Icoms\friends.png" />
     <Resource Include="Icoms\search.png" />
     <Resource Include="Icoms\addfriend.png" />
+    <Resource Include="Icoms\moreBT.png" />
     <Content Include="Models\DatabaseSocialWeb.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>DatabaseSocialWeb.Context.cs</LastGenOutput>

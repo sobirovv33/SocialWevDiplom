@@ -1,7 +1,11 @@
-﻿using SocialWeb.Views;
+﻿using Newtonsoft.Json;
+using SocialWeb.Models;
+using SocialWeb.Services;
+using SocialWeb.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -25,6 +29,7 @@ namespace SocialWeb
         {
             InitializeComponent();
             MainFrame.Navigate(new AuthorizationPage());
+            var user = NetManager.Get<Users>("Users/GetUser/2").Result;
         }
     }
 }

@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -26,7 +27,9 @@ namespace SocialWeb.Views
 
         private void LoadFriends()
         {
+            var users = App.Db.Users;
             var userId = App.LogedToUser.idUser;
+
             var friends = App.Db.Friends
                 .Where(f => (f.idUser == userId || f.idFried == userId))
                 .Select(f => new 
@@ -35,8 +38,17 @@ namespace SocialWeb.Views
                     Name = f.Users.Name,
                     Surname = f.Users.Surname,
                     ImageUser = f.Users.ImageUser,
-                    IsFriend = true
+                    //IsFriend = true
                 }).ToList();
+            //DataContext = LVItem;
+            //if (LVItem.IsFriend == true)
+            //{
+            //    LVFriends.DataContext = friends;
+            //}
+            //foreach(var user in users)
+            //{
+            //    user.isFriend = App.Db.Friends
+            //}
 
             LVFriends.ItemsSource = friends;
             

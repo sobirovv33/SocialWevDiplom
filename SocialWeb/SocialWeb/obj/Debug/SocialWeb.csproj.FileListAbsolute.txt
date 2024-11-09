@@ -72,3 +72,10 @@ C:\Users\user\Desktop\Muhammad\Диплом Мухаммад\SocialWevDiplom\Soc
 C:\Users\user\Desktop\Muhammad\Диплом Мухаммад\SocialWevDiplom\SocialWeb\SocialWeb\obj\Debug\SocialWeb.csproj.Up2Date
 C:\Users\user\Desktop\Muhammad\Диплом Мухаммад\SocialWevDiplom\SocialWeb\SocialWeb\obj\Debug\SocialWeb.exe
 C:\Users\user\Desktop\Muhammad\Диплом Мухаммад\SocialWevDiplom\SocialWeb\SocialWeb\obj\Debug\SocialWeb.pdb
+C:\Users\user\Desktop\Muhammad\Диплом Мухаммад\SocialWevDiplom\SocialWeb\SocialWeb\obj\Debug\CustomControls\StatusThumbsUserControl.g.cs
+C:\Users\user\Desktop\Muhammad\Диплом Мухаммад\SocialWevDiplom\SocialWeb\SocialWeb\obj\Debug\Views\ChatsPage.g.cs
+C:\Users\user\Desktop\Muhammad\Диплом Мухаммад\SocialWevDiplom\SocialWeb\SocialWeb\obj\Debug\CustomControls\StatusThumbsUserControl.baml
+C:\Users\user\Desktop\Muhammad\Диплом Мухаммад\SocialWevDiplom\SocialWeb\SocialWeb\obj\Debug\Views\ChatsPage.baml
+C:\Users\user\Desktop\Muhammad\Диплом Мухаммад\SocialWevDiplom\SocialWeb\SocialWeb\bin\Debug\Newtonsoft.Json.dll
+C:\Users\user\Desktop\Muhammad\Диплом Мухаммад\SocialWevDiplom\SocialWeb\SocialWeb\bin\Debug\Newtonsoft.Json.xml
+C:\Users\user\Desktop\Muhammad\Диплом Мухаммад\SocialWevDiplom\SocialWeb\SocialWeb\bin\Debug\ru\EntityFramework.SqlServer.resources.dll

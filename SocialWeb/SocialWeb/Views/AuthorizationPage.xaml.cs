@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SocialWeb.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,9 +17,6 @@ using System.Windows.Shapes;
 
 namespace SocialWeb.Views
 {
-    /// <summary>
-    /// Логика взаимодействия для AuthorizationPage.xaml
-    /// </summary>
     public partial class AuthorizationPage : Page
     {
         public AuthorizationPage()
@@ -26,12 +24,11 @@ namespace SocialWeb.Views
             InitializeComponent();
         }
 
-        private void BtEnter_Click(object sender, RoutedEventArgs e)
+        private async void BtEnter_Click(object sender, RoutedEventArgs e)
         {
-            var login = TbPhoneNumber.Text;
+            var phoneNumber = TbPhoneNumber.Text;
             var password = PbPassword.Password;
-
-            var logedUser = App.Db.Users.FirstOrDefault(x => x.PhoneNumber == login && x.Password == password);
+            //var logedUser = App.Db.Users.FirstOrDefault(x => x.PhoneNumber == phoneNumber && x.Password == password);
             
             if(string.IsNullOrWhiteSpace(TbPhoneNumber.Text) == true)
             {
@@ -53,13 +50,17 @@ namespace SocialWeb.Views
                 PasswordTextError.Visibility = Visibility.Visible;
                 PasswordTextError.Text = "Пароль может содержать только цифры и латинские буквы!";
             }
-            if (logedUser == null)
+
+            var loginData = new {PhoneNumber = phoneNumber, Password = password};
+            try
             {
-                MessageBox.Show("Логин или пароль не существует!");
-                return;
+                var logedUser = await NetManager.Post<dynamic, object>("Users/Authenticate", loginData);
+                NavigationService.Navigate(new MainPage());
             }
-            App.LogedToUser = logedUser;
-            NavigationService.Navigate(new MainPage());
+            catch
+            {
+                MessageBox.Show("Логин или пароль не существуют!");
+            }
         }
 
         private void BtRegistration_Click(object sender, RoutedEventArgs e)
