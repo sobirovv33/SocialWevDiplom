@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
+using System.Security.RightsManagement;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,28 +11,48 @@ namespace SocialWeb.Services
 {
     public static class NetManager
     {
-        private static HttpClient _httpClient = new HttpClient();
-        private static string _url = "http://localhost:56945/api/";
+        public static string URL = "http://localhost:56945/api/";
+        static HttpClient httpClient = new HttpClient();
 
-        public static async Task<T> Get<T>(string url)
+
+        public static async Task<T> Get<T>(string controller)
         {
-            var response = await _httpClient.GetAsync("http://localhost:56945/api/Users/GetUsers");
-            var json = await response.Content.ReadAsStringAsync();
-            return JsonConvert.DeserializeObject<T>(json);  
+            var response = await httpClient.GetAsync(URL + controller);
+            var content = await response.Content.ReadAsStringAsync();
+            var data = JsonConvert.DeserializeObject<T>(content);
+            return data;
         }
 
-        // Метод для отправки данных на сервер через POST
-        // не пон
-        public static async Task<T> Post<T, U>(string endpoint, U data)
+        //public static async void Post<T>(string controller, T data)
+        //{
+        //    var json = JsonConvert.SerializeObject(data);
+        //    var response = await httpClient.PostAsync(URL + controller, new StringContent(json, Encoding.UTF8, "application/json"));
+        //    //var responseString = await response.Content.ReadAsStringAsync();
+        //    //var result = JsonConvert.DeserializeObject<T>(responseString);
+        //    //return result;
+        //}
+
+        public static async Task<T> Post<T>(string controller, T data)
         {
             var json = JsonConvert.SerializeObject(data);
-            var content = new StringContent(json, Encoding.UTF8, "application/json");
+            var response = await httpClient.PostAsync(URL + controller, new StringContent(json, Encoding.UTF8, "application/json"));
+            var responseString = await response.Content.ReadAsStringAsync();
+            var result = JsonConvert.DeserializeObject<T>(responseString);
+            return result;
+        }
 
-            var response = await _httpClient.PostAsync(_url + endpoint, content);
-            response.EnsureSuccessStatusCode();
+        public static async Task<HttpResponseMessage> Put<T>(string controller, T data) // для редактирования
+        {
+            var json = JsonConvert.SerializeObject(data);
+            var response = await httpClient.PutAsync(URL + controller, new StringContent(json, Encoding.UTF8, "application/json"));
+            return response;
+        }
 
-            var resultJson = await response.Content.ReadAsStringAsync();
-            return JsonConvert.DeserializeObject<T>(resultJson);
+        public static async Task<HttpResponseMessage> Delete<T>(string controller)
+        {
+            var response = await httpClient.DeleteAsync(URL + controller);
+            return response;
         }
     }
+
 }

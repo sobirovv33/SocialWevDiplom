@@ -15,9 +15,6 @@ using System.Windows.Shapes;
 
 namespace SocialWeb.Views
 {
-    /// <summary>
-    /// Логика взаимодействия для ChatsPage.xaml
-    /// </summary>
     public partial class ChatsPage : Page
     {
         public ChatsPage()

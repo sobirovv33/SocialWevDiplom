@@ -6,15 +6,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 using SocialWeb.Models;
+using SocialWeb.Services;
 
 namespace SocialWeb
 {
-    /// <summary>
-    /// Логика взаимодействия для App.xaml
-    /// </summary>
     public partial class App : Application
     {
         public static SocialWebEntities Db = new SocialWebEntities();
-        public static Users LogedToUser;
+        public static AuthenticatedUser LogedToUser;
     }
 }

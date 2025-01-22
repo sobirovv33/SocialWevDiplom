@@ -1,0 +1,30 @@
+﻿<Page x:Class="SocialWeb.Views.ChatsUserPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SocialWeb.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="900"
+      Title="ChatsUserPage" Loaded="Page_Loaded">
+
+    <Grid>
+        <ListBox x:Name="MessagesList" Margin="10" VerticalAlignment="Top" Height="300">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock Text="{Binding UserName}" FontWeight="Bold" />
+                        <TextBlock Text="{Binding TextSender}" TextWrapping="Wrap" />
+                        <TextBlock Text="{Binding DateOfSender}" FontStyle="Italic" FontSize="10" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <TextBox x:Name="MessageTextBox" Margin="10" VerticalAlignment="Bottom" Height="30" Width="450" />
+
+        <Button Content="Отправить" x:Name="BtSendMessageButton"
+                VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="100" Margin="0,0,10,10" 
+                Click="BtSendMessageButton_Click"/>
+    </Grid>
+</Page>

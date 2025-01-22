@@ -19,7 +19,8 @@
         <TextBlock Text="Список друзей" HorizontalAlignment="Center" FontSize="30"
                    Foreground="White" FontWeight="Bold"/>
         <Grid Grid.Row="1" HorizontalAlignment="Right" Width="250">
-            <ComboBox Grid.Row="1" HorizontalAlignment="Right" Width="200" x:Name="CBStatusFriend"/>
+            <Button Grid.Row="1" HorizontalAlignment="Right" Width="200" x:Name="BtAddFriend"
+                    Height="35" Margin="5" Content="Добавить" Click="BtAddFriend_Click"/>
         </Grid>
 
         <Grid Grid.Row="1" Width="400" HorizontalAlignment="Left" Margin="20 10 0 0">

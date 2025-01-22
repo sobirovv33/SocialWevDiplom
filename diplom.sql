@@ -13,12 +13,14 @@ create table Users(
 	LastName nvarchar(50) null,
 	DataBirthDay date null,
 	PhoneNumber nvarchar(20) not null,
-	Email nvarchar(100) null,
+	Email nvarchar(100) null, 
 	Password nvarchar(100) not null,
 	RoleId int foreign key references Roles(idRole)
 )
 alter table Users add ImageUser image null
 select * from Users
+insert into Users(Name, Surname, LastName, PhoneNumber, Password, RoleId)
+values ('1', '1', '1','1', 1, 1)
 
 create table Posts (
 	idPost int primary key identity,
@@ -54,11 +56,26 @@ create table DialogMessage (
 	idUser int foreign key references Users(idUser) 
 )
 
+create table ApplicationStatus(
+	idStatus int primary key identity,
+	Name nvarchar(50) not null,
+)
+
+create table Friends (
+	idFriendship int primary key identity,
+	idUser int foreign key references Users(idUser),
+	idFried int foreign key references Users(idUser),
+	idAppStatus int foreign key references ApplicationStatus(idStatus),
+	RequestDate date
+)
+alter table Friends add isFriend bit not null
+select * from Friends
 
 
-
-
-
+insert into ApplicationStatus(Name)
+values ('В ожидании'),
+	   ('Добавлен'),
+	   ('Заблокирован')
 
 
 insert into Roles(RoleName)

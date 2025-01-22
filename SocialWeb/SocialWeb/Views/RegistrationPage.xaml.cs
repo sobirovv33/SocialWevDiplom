@@ -1,4 +1,5 @@
 ﻿using SocialWeb.Models;
+using SocialWeb.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,15 +20,13 @@ namespace SocialWeb.Views
 {
     public partial class RegistrationPage : Page
     {
-        Users user = new Users();
         public RegistrationPage()
         {
             InitializeComponent();
-            DataContext = user;
         }
 
 
-        private void BtSave_Click(object sender, RoutedEventArgs e)
+        private async void BtSave_Click(object sender, RoutedEventArgs e)
         {
             bool isValid = true;
 
@@ -99,9 +98,18 @@ namespace SocialWeb.Views
 
             if (isValid)
             {
-                user.RoleId = 2;
-                App.Db.Users.Add(user);
-                App.Db.SaveChanges();
+                var loginData = new AuthenticatedUser
+                {
+                    Name = TBName.Text,
+                    Surname = TBSurname.Text,
+                    LastName = TbLastName.Text,
+                    PhoneNumber = TbPhoneNumber.Text,
+                    Password = TbPhoneNumber.Text,
+                    DataBirthDay = (DateTime)DpBirthDay.SelectedDate
+                    
+                };
+
+                var logedUser = await NetManager.Post<AuthenticatedUser>("Users/Registration", loginData);
                 MessageBox.Show("Вы успешно зарегистрировались!");
             }
         }

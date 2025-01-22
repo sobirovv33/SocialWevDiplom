@@ -29,38 +29,42 @@ namespace SocialWeb.Views
             var phoneNumber = TbPhoneNumber.Text;
             var password = PbPassword.Password;
             //var logedUser = App.Db.Users.FirstOrDefault(x => x.PhoneNumber == phoneNumber && x.Password == password);
-            
-            if(string.IsNullOrWhiteSpace(TbPhoneNumber.Text) == true)
-            {
-                LoginTextError.Visibility = Visibility.Visible;
-                LoginTextError.Text = "Введите номер телефона!";
-            }
-            else if (!Regex.IsMatch(TbPhoneNumber.Text, @"^\+7[0-9]{10}$"))
-            {
-                LoginTextError.Visibility = Visibility.Visible;
-                LoginTextError.Text = "Пожалуйста, введите номер в формате: +7XXXXXXXXXX.";
-            }
-            if (string.IsNullOrWhiteSpace(PbPassword.Password) == true)
-            {
-                PasswordTextError.Visibility = Visibility.Visible;
-                PasswordTextError.Text = "Введите пароль!";
-            }
-            else if (!Regex.IsMatch(PbPassword.Password, @"^[a-zA-Z0-9]+$"))
-            {
-                PasswordTextError.Visibility = Visibility.Visible;
-                PasswordTextError.Text = "Пароль может содержать только цифры и латинские буквы!";
-            }
 
-            var loginData = new {PhoneNumber = phoneNumber, Password = password};
-            try
+            //if(string.IsNullOrWhiteSpace(TbPhoneNumber.Text) == true)
+            //{
+            //    LoginTextError.Visibility = Visibility.Visible;
+            //    LoginTextError.Text = "Введите номер телефона!";
+            //}
+            //else if (!Regex.IsMatch(TbPhoneNumber.Text, @"^\+7[0-9]{10}$"))
+            //{
+            //    LoginTextError.Visibility = Visibility.Visible;
+            //    LoginTextError.Text = "Пожалуйста, введите номер в формате: +7XXXXXXXXXX.";
+            //}
+            //if (string.IsNullOrWhiteSpace(PbPassword.Password) == true)
+            //{
+            //    PasswordTextError.Visibility = Visibility.Visible;
+            //    PasswordTextError.Text = "Введите пароль!";
+            //}
+            //else if (!Regex.IsMatch(PbPassword.Password, @"^[a-zA-Z0-9]+$"))
+            //{
+            //    PasswordTextError.Visibility = Visibility.Visible;
+            //    PasswordTextError.Text = "Пароль может содержать только цифры и латинские буквы!";
+            //}
+
+            var loginData = new AuthenticatedUser
             {
-                var logedUser = await NetManager.Post<dynamic, object>("Users/Authenticate", loginData);
+                PhoneNumber = phoneNumber,
+                Password = password
+            };
+            var logedUser = await NetManager.Post<AuthenticatedUser>("Users/Authenticate", loginData);
+            
+            if (logedUser != null)
+            {
+                App.LogedToUser = logedUser;
                 NavigationService.Navigate(new MainPage());
+                return;
             }
-            catch
-            {
-                MessageBox.Show("Логин или пароль не существуют!");
-            }
+            MessageBox.Show("Логин или пароль не существуют!");
         }
 
         private void BtRegistration_Click(object sender, RoutedEventArgs e)

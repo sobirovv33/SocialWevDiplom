@@ -17,7 +17,8 @@
 
         <Border Grid.Column="0" Background="#333" x:Name="Sidebar" Width="200">
             <StackPanel Margin="0 50 0 0">
-                <Button Style="{StaticResource SidebarButtonStyle}">
+                <Button Style="{StaticResource SidebarButtonStyle}"
+                        x:Name="BtChats" Click="BtChats_Click">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="/icoms/message.png" Width="24" Height="24" Margin="10,0"/>
                         <TextBlock Text="Чаты" VerticalAlignment="Center" Margin="10,0"/>

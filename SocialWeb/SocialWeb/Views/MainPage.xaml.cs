@@ -48,5 +48,10 @@ namespace SocialWeb.Views
         {
             EnterFrame.Navigate(new ListFriendsPage());
         }
+
+        private void BtChats_Click(object sender, RoutedEventArgs e)
+        {
+            EnterFrame.Navigate(new ChatsUserPage());
+        }
     }
 }

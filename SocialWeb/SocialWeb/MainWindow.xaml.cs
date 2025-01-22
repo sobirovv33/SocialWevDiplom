@@ -29,7 +29,7 @@ namespace SocialWeb
         {
             InitializeComponent();
             MainFrame.Navigate(new AuthorizationPage());
-            var user = NetManager.Get<Users>("Users/GetUser/2").Result;
+            //var user = NetManager.Get<Users>("Users/GetUser/2").Result;
         }
     }
 }
